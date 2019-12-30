@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2742,50 +2742,46 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/add-user.js":
+/*!***************************!*\
+  !*** ./pages/add-user.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Index; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AddUser; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Layout_AdminLayoutHoc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout/AdminLayoutHoc */ "./components/Layout/AdminLayoutHoc.js");
-var _jsxFileName = "/Users/davidzonana/Documents/trybu/test/pages/index.js";
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/davidzonana/Documents/trybu/test/pages/add-user.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+
+class AddUser extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   render() {
     return __jsx(_components_Layout_AdminLayoutHoc__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      contentTitle: 'Home',
+      contentTitle: 'Add User',
       contentTitleButton: __jsx("i", {
-        className: "fa fa-2x fa-home",
+        className: "fa fa-2x fa-user-plus",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 5
+          lineNumber: 6
         },
         __self: this
       }),
       url: this.props.url,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 5
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "row",
-      __source: {
-        fileName: _jsxFileName,
         lineNumber: 6
       },
       __self: this
     }, __jsx("div", {
-      className: "col-md-6",
+      className: "col-md-6 offset-md-3",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 7
@@ -2812,777 +2808,381 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 10
       },
       __self: this
-    }, __jsx("i", {
-      className: "fa fa-text-width",
+    }, "New User Form")), __jsx("form", {
+      className: "form-horizontal",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
+        lineNumber: 12
       },
       __self: this
-    }), "\xA0Headlines"), __jsx("div", {
-      className: "card-tools",
+    }, __jsx("div", {
+      className: "card-body",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 13
       },
       __self: this
-    }, __jsx("button", {
-      type: "button",
-      className: "btn btn-tool",
-      "data-widget": "collapse",
-      "data-toggle": "tooltip",
-      title: "Collapse",
+    }, __jsx("div", {
+      className: "form-group",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 14
       },
       __self: this
-    }, __jsx("i", {
-      className: "fa fa-minus",
+    }, __jsx("label", {
+      htmlFor: "validation-ex",
+      className: "col-sm-3",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 15
       },
       __self: this
-    })), __jsx("button", {
-      type: "button",
-      className: "btn btn-tool",
-      "data-widget": "remove",
-      "data-toggle": "tooltip",
-      title: "Remove",
+    }, "First name"), __jsx("div", {
+      className: "col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }, __jsx("input", {
+      type: "text",
+      className: "form-control is-valid",
+      id: "validation-ex",
+      placeholder: "Anil",
+      value: "",
+      required: true,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 17
       },
       __self: this
-    }, __jsx("i", {
-      className: "fa fa-times",
+    }), __jsx("div", {
+      className: "valid-feedback",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 18
       },
       __self: this
-    })))), __jsx("div", {
-      className: "card-body",
+    }, __jsx("i", {
+      className: "fa fa-check-circle",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }), " Looks good!"))), __jsx("div", {
+      className: "form-group",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }, __jsx("label", {
+      htmlFor: "validation-ex",
+      className: "col-sm-3",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 22
       },
       __self: this
-    }, __jsx("h1", {
+    }, "Last name"), __jsx("div", {
+      className: "col-sm-12",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 23
       },
       __self: this
-    }, "h1. Bootstrap heading"), __jsx("h2", {
+    }, __jsx("input", {
+      type: "text",
+      className: "form-control is-invalid",
+      id: "validation-ex",
+      placeholder: "",
+      value: "",
+      required: true,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 24
       },
       __self: this
-    }, "h2. Bootstrap heading"), __jsx("h3", {
+    }), __jsx("div", {
+      className: "invalid-feedback",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 25
       },
       __self: this
-    }, "h3. Bootstrap heading"), __jsx("h4", {
+    }, __jsx("i", {
+      className: "fa fa-exclamation-circle",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 25
       },
       __self: this
-    }, "h4. Bootstrap heading"), __jsx("h5", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27
-      },
-      __self: this
-    }, "h5. Bootstrap heading"), __jsx("h6", {
+    }), " Enter a last name"))), __jsx("div", {
+      className: "form-group",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 28
       },
       __self: this
-    }, "h6. Bootstrap heading")), __jsx("div", {
-      className: "card-footer text-right text-muted",
+    }, __jsx("label", {
+      htmlFor: "textArea1",
+      className: "col-sm-3 control-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, "TextArea"), __jsx("div", {
+      className: "col-sm-12",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 30
       },
       __self: this
-    }, __jsx("small", {
+    }, __jsx("textarea", {
+      id: "textArea1",
+      className: "form-control",
+      rows: "3",
+      placeholder: "Enter ...",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 31
       },
       __self: this
-    }, "Card Footer")))), __jsx("div", {
-      className: "col-md-6",
+    }))), __jsx("div", {
+      className: "form-group",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }, __jsx("label", {
+      htmlFor: "select-1",
+      className: "col-sm-12 control-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }, "Select"), __jsx("div", {
+      className: "col-sm-offset-2 col-sm-12",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 36
       },
       __self: this
-    }, __jsx("div", {
-      className: "card",
+    }, __jsx("select", {
+      multiple: "",
+      id: "select-1",
+      className: "form-control",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 37
       },
       __self: this
-    }, __jsx("div", {
-      className: "card-header",
+    }, __jsx("option", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 38
       },
       __self: this
-    }, __jsx("h3", {
-      className: "card-title",
+    }, "option 1"), __jsx("option", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 39
       },
       __self: this
-    }, __jsx("i", {
-      className: "fa fa-text-width",
+    }, "option 2"), __jsx("option", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 40
       },
       __self: this
-    }), "\xA0Text Emphasis")), __jsx("div", {
-      className: "card-body",
+    }, "option 3"), __jsx("option", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 41
       },
       __self: this
-    }, __jsx("p", {
-      className: "lead",
+    }, "option 4"), __jsx("option", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 42
       },
       __self: this
-    }, "Lead to emphasize importance"), __jsx("p", {
-      className: "text-success",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 45
-      },
-      __self: this
-    }, "Text green to emphasize success"), __jsx("p", {
-      className: "text-info",
+    }, "option 5")))), __jsx("div", {
+      className: "form-group",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 46
       },
       __self: this
-    }, "Text aqua to emphasize info"), __jsx("p", {
-      className: "text-primary",
+    }, __jsx("label", {
+      htmlFor: "check-1",
+      className: "col-sm-3 control-label",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 47
       },
       __self: this
-    }, "Text light blue to emphasize info (2)"), __jsx("p", {
-      className: "text-danger",
+    }, "Checkbox"), __jsx("div", {
+      className: "col-sm-offset-2 col-sm-10",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 48
       },
       __self: this
-    }, "Text red to emphasize danger"), __jsx("p", {
-      className: "text-warning",
+    }, __jsx("div", {
+      className: "form-check",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 49
       },
       __self: this
-    }, "Text yellow to emphasize warning"), __jsx("p", {
-      className: "text-muted",
+    }, __jsx("input", {
+      className: "form-check-input",
+      id: "check-1",
+      type: "checkbox",
+      value: "option1",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 50
       },
       __self: this
-    }, "Text muted to emphasize general"))))), __jsx("div", {
-      className: "row",
+    }), __jsx("label", {
+      className: "form-check-label",
+      htmlFor: "check-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51
+      },
+      __self: this
+    }, "Checkbox")))), __jsx("div", {
+      className: "form-group",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      },
+      __self: this
+    }, __jsx("label", {
+      htmlFor: "radio-1",
+      className: "col-sm-3 control-label",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 56
       },
       __self: this
-    }, __jsx("div", {
-      className: "col-md-6",
+    }, "Radio"), __jsx("div", {
+      className: "col-sm-offset-2 col-sm-10",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 57
       },
       __self: this
     }, __jsx("div", {
-      className: "card",
+      className: "form-check",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 58
       },
       __self: this
-    }, __jsx("div", {
-      className: "card-header",
+    }, __jsx("input", {
+      className: "form-check-input",
+      id: "radio-1",
+      type: "radio",
+      value: "option1",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 59
       },
       __self: this
-    }, __jsx("h3", {
-      className: "card-title",
+    }), __jsx("label", {
+      className: "form-check-label",
+      htmlFor: "radio-1",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 60
       },
       __self: this
-    }, __jsx("i", {
-      className: "fa fa-text-width",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 61
-      },
-      __self: this
-    }), "\xA0Description")), __jsx("div", {
-      className: "card-body",
+    }, "Radio")))), __jsx("div", {
+      className: "form-group",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 64
       },
       __self: this
-    }, __jsx("dl", {
+    }, __jsx("label", {
+      htmlFor: "terms-1",
+      className: "col-sm-12 control-label",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 65
       },
       __self: this
-    }, __jsx("dt", {
+    }, "Terms and conditions"), __jsx("div", {
+      className: "col-sm-offset-2 col-sm-10",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 66
       },
       __self: this
-    }, "Description lists"), __jsx("dd", {
+    }, __jsx("div", {
+      className: "form-check",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 67
       },
       __self: this
-    }, "A description list is perfect for defining terms."), __jsx("dt", {
+    }, __jsx("input", {
+      className: "form-check-input is-invalid",
+      type: "checkbox",
+      value: "",
+      id: "invalidCheck3",
+      required: true,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 68
       },
       __self: this
-    }, "Euismod"), __jsx("dd", {
+    }), __jsx("label", {
+      className: "form-check-label",
+      htmlFor: "invalidCheck3",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 69
       },
       __self: this
-    }, "Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit."), __jsx("dd", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 70
-      },
-      __self: this
-    }, "Donec id elit non mi porta gravida at eget metus."), __jsx("dt", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 71
-      },
-      __self: this
-    }, "Malesuada porta"), __jsx("dd", {
+    }, "Agree to terms and conditions"), __jsx("div", {
+      className: "invalid-feedback",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 72
       },
       __self: this
-    }, "Etiam porta sem malesuada magna mollis euismod."))))), __jsx("div", {
-      className: "col-md-6",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 78
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "card",
+    }, "You must agree before submitting."))))), __jsx("div", {
+      className: "card-footer",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 79
       },
       __self: this
-    }, __jsx("div", {
-      className: "card-header",
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: "/",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 80
       },
       __self: this
-    }, __jsx("h3", {
-      className: "card-title",
+    }, __jsx("button", {
+      type: "submit",
+      className: "btn btn-info float-right",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81
+        lineNumber: 80
       },
       __self: this
-    }, __jsx("i", {
-      className: "fa fa-text-width",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 82
-      },
-      __self: this
-    }), "\xA0Description Horizontal")), __jsx("div", {
-      className: "card-body",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 85
-      },
-      __self: this
-    }, __jsx("dl", {
-      className: "dl-horizontal",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 86
-      },
-      __self: this
-    }, __jsx("dt", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 87
-      },
-      __self: this
-    }, "Description lists"), __jsx("dd", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 88
-      },
-      __self: this
-    }, "A description list is perfect for defining terms."), __jsx("dt", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 89
-      },
-      __self: this
-    }, "Euismod"), __jsx("dd", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 90
-      },
-      __self: this
-    }, "Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit."), __jsx("dd", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 91
-      },
-      __self: this
-    }, "Donec id elit non mi porta gravida at eget metus."), __jsx("dt", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 92
-      },
-      __self: this
-    }, "Felis euismod semper eget lacinia"), __jsx("dd", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 93
-      },
-      __self: this
-    }, "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.")))))), __jsx("div", {
-      className: "row",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 102
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "col-sm-12",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 103
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "card card-default color-palette-box",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 104
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "card-header",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 105
-      },
-      __self: this
-    }, __jsx("h3", {
-      className: "card-title",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 106
-      },
-      __self: this
-    }, __jsx("i", {
-      className: "fa fa-tag",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 107
-      },
-      __self: this
-    }), "\xA0Color Palette")), __jsx("div", {
-      className: "card-body",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 110
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "row",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 111
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "col-sm-4 col-md-2",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 112
-      },
-      __self: this
-    }, __jsx("h4", {
-      className: "text-center",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 113
-      },
-      __self: this
-    }, "Primary"), __jsx("div", {
-      className: "color-palette-set",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 115
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "bg-primary disabled color-palette",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 116
-      },
-      __self: this
-    }, __jsx("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 116
-      },
-      __self: this
-    }, "Disabled")), __jsx("div", {
-      className: "bg-primary color-palette",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 117
-      },
-      __self: this
-    }, __jsx("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 117
-      },
-      __self: this
-    }, "#3c8dbc")))), __jsx("div", {
-      className: "col-sm-4 col-md-2",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 121
-      },
-      __self: this
-    }, __jsx("h4", {
-      className: "text-center",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 122
-      },
-      __self: this
-    }, "Info"), __jsx("div", {
-      className: "color-palette-set",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 124
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "bg-info disabled color-palette",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 125
-      },
-      __self: this
-    }, __jsx("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 125
-      },
-      __self: this
-    }, "Disabled")), __jsx("div", {
-      className: "bg-info color-palette",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 126
-      },
-      __self: this
-    }, __jsx("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 126
-      },
-      __self: this
-    }, "#00c0ef")))), __jsx("div", {
-      className: "col-sm-4 col-md-2",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 130
-      },
-      __self: this
-    }, __jsx("h4", {
-      className: "text-center",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 131
-      },
-      __self: this
-    }, "Success"), __jsx("div", {
-      className: "color-palette-set",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 133
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "bg-success disabled color-palette",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 134
-      },
-      __self: this
-    }, __jsx("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 134
-      },
-      __self: this
-    }, "Disabled")), __jsx("div", {
-      className: "bg-success color-palette",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 135
-      },
-      __self: this
-    }, __jsx("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 135
-      },
-      __self: this
-    }, "#00a65a")))), __jsx("div", {
-      className: "col-sm-4 col-md-2",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 139
-      },
-      __self: this
-    }, __jsx("h4", {
-      className: "text-center",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 140
-      },
-      __self: this
-    }, "Warning"), __jsx("div", {
-      className: "color-palette-set",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 142
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "bg-warning disabled color-palette",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 143
-      },
-      __self: this
-    }, __jsx("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 143
-      },
-      __self: this
-    }, "Disabled")), __jsx("div", {
-      className: "bg-warning color-palette",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 144
-      },
-      __self: this
-    }, __jsx("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 144
-      },
-      __self: this
-    }, "#f39c12")))), __jsx("div", {
-      className: "col-sm-4 col-md-2",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 148
-      },
-      __self: this
-    }, __jsx("h4", {
-      className: "text-center",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 149
-      },
-      __self: this
-    }, "Danger"), __jsx("div", {
-      className: "color-palette-set",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 151
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "bg-danger disabled color-palette",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 152
-      },
-      __self: this
-    }, __jsx("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 152
-      },
-      __self: this
-    }, "Disabled")), __jsx("div", {
-      className: "bg-danger color-palette",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 153
-      },
-      __self: this
-    }, __jsx("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 153
-      },
-      __self: this
-    }, "#f56954")))), __jsx("div", {
-      className: "col-sm-4 col-md-1",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 157
-      },
-      __self: this
-    }, __jsx("h4", {
-      className: "text-center",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 158
-      },
-      __self: this
-    }, "Gray"), __jsx("div", {
-      className: "color-palette-set",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 160
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "bg-gray disabled color-palette",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 161
-      },
-      __self: this
-    }, __jsx("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 161
-      },
-      __self: this
-    }, "Disabled")), __jsx("div", {
-      className: "bg-gray color-palette",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 162
-      },
-      __self: this
-    }, __jsx("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 162
-      },
-      __self: this
-    }, "#d2d6de")))), __jsx("div", {
-      className: "col-sm-4 col-md-1",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 166
-      },
-      __self: this
-    }, __jsx("h4", {
-      className: "text-center",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 167
-      },
-      __self: this
-    }, "Black"), __jsx("div", {
-      className: "color-palette-set",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 169
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "bg-black disabled color-palette",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 170
-      },
-      __self: this
-    }, __jsx("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 170
-      },
-      __self: this
-    }, "Disabled")), __jsx("div", {
-      className: "bg-black color-palette",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 171
-      },
-      __self: this
-    }, __jsx("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 171
-      },
-      __self: this
-    }, "#111111"))))))))));
+    }, "Save")))))));
   }
 
 }
@@ -3600,14 +3200,14 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
 /***/ }),
 
-/***/ 3:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
+/***/ 5:
+/*!*********************************!*\
+  !*** multi ./pages/add-user.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/davidzonana/Documents/trybu/test/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/davidzonana/Documents/trybu/test/pages/add-user.js */"./pages/add-user.js");
 
 
 /***/ }),
@@ -3789,4 +3389,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=add-user.js.map

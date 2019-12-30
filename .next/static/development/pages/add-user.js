@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/users.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/add-user.js"],{
 
 /***/ "./components/Layout/AdminContent.js":
 /*!*******************************************!*\
@@ -5706,21 +5706,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fusers&absolutePagePath=%2FUsers%2Fdavidzonana%2FDocuments%2Ftrybu%2Ftest%2Fpages%2Fusers.js!./":
-/*!**************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fusers&absolutePagePath=%2FUsers%2Fdavidzonana%2FDocuments%2Ftrybu%2Ftest%2Fpages%2Fusers.js ***!
-  \**************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fadd-user&absolutePagePath=%2FUsers%2Fdavidzonana%2FDocuments%2Ftrybu%2Ftest%2Fpages%2Fadd-user.js!./":
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fadd-user&absolutePagePath=%2FUsers%2Fdavidzonana%2FDocuments%2Ftrybu%2Ftest%2Fpages%2Fadd-user.js ***!
+  \********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/users", function() {
-      var mod = __webpack_require__(/*! ./pages/users.js */ "./pages/users.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/add-user", function() {
+      var mod = __webpack_require__(/*! ./pages/add-user.js */ "./pages/add-user.js")
       if(true) {
-        module.hot.accept(/*! ./pages/users.js */ "./pages/users.js", function() {
-          if(!next.router.components["/users"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/users.js */ "./pages/users.js")
-          next.router.update("/users", updatedPage)
+        module.hot.accept(/*! ./pages/add-user.js */ "./pages/add-user.js", function() {
+          if(!next.router.components["/add-user"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/add-user.js */ "./pages/add-user.js")
+          next.router.update("/add-user", updatedPage)
         })
       }
       return mod
@@ -9443,16 +9443,16 @@ try {
 
 /***/ }),
 
-/***/ "./pages/users.js":
-/*!************************!*\
-  !*** ./pages/users.js ***!
-  \************************/
+/***/ "./pages/add-user.js":
+/*!***************************!*\
+  !*** ./pages/add-user.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Users; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AddUser; });
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
@@ -9468,51 +9468,36 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/davidzonana/Documents/trybu/test/pages/users.js";
+var _jsxFileName = "/Users/davidzonana/Documents/trybu/test/pages/add-user.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 
 
-var Users =
+var AddUser =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Users, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(AddUser, _React$Component);
 
-  function Users() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Users);
+  function AddUser() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, AddUser);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Users).apply(this, arguments));
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(AddUser).apply(this, arguments));
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Users, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(AddUser, [{
     key: "render",
     value: function render() {
       return __jsx(_components_Layout_AdminLayoutHoc__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        contentTitle: 'Users',
-        contentTitleButton: __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
-          href: "/add-user",
+        contentTitle: 'Add User',
+        contentTitleButton: __jsx("i", {
+          className: "fa fa-2x fa-user-plus",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 8
+            lineNumber: 6
           },
           __self: this
-        }, __jsx("button", {
-          type: "button",
-          className: "btn btn-outline-success btn-sm",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 9
-          },
-          __self: this
-        }, __jsx("i", {
-          className: "fa fa-user-plus fa-fw",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 9
-          },
-          __self: this
-        }), " Add a new user")),
+        }),
         url: this.props.url,
         __source: {
           fileName: _jsxFileName,
@@ -9520,316 +9505,426 @@ function (_React$Component) {
         },
         __self: this
       }, __jsx("div", {
-        className: "row",
+        className: "col-md-6 offset-md-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
-        },
-        __self: this
-      }, __jsx("div", {
-        className: "col-12",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 7
         },
         __self: this
       }, __jsx("div", {
         className: "card",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 8
         },
         __self: this
       }, __jsx("div", {
         className: "card-header",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 9
         },
         __self: this
       }, __jsx("h3", {
         className: "card-title",
         __source: {
           fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
+      }, "New User Form")), __jsx("form", {
+        className: "form-horizontal",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, __jsx("div", {
+        className: "card-body",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }, __jsx("div", {
+        className: "form-group",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
+      }, __jsx("label", {
+        htmlFor: "validation-ex",
+        className: "col-sm-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
+      }, "First name"), __jsx("div", {
+        className: "col-sm-12",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, __jsx("input", {
+        type: "text",
+        className: "form-control is-valid",
+        id: "validation-ex",
+        placeholder: "Anil",
+        value: "",
+        required: true,
+        __source: {
+          fileName: _jsxFileName,
           lineNumber: 17
         },
         __self: this
-      }, "Current active users"), __jsx("div", {
-        className: "card-tools",
+      }), __jsx("div", {
+        className: "valid-feedback",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 18
         },
         __self: this
-      }, __jsx("div", {
-        className: "input-group input-group-sm",
-        style: {
-          width: '150px'
-        },
+      }, __jsx("i", {
+        className: "fa fa-check-circle",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 18
         },
         __self: this
-      }, __jsx("input", {
-        type: "text",
-        name: "table_search",
-        className: "form-control float-right",
-        placeholder: "Search",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        },
-        __self: this
-      }), __jsx("div", {
-        className: "input-group-append",
+      }), " Looks good!"))), __jsx("div", {
+        className: "form-group",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 21
         },
         __self: this
-      }, __jsx("button", {
-        type: "submit",
-        className: "btn btn-default",
+      }, __jsx("label", {
+        htmlFor: "validation-ex",
+        className: "col-sm-3",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 22
+        },
+        __self: this
+      }, "Last name"), __jsx("div", {
+        className: "col-sm-12",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }, __jsx("input", {
+        type: "text",
+        className: "form-control is-invalid",
+        id: "validation-ex",
+        placeholder: "",
+        value: "",
+        required: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }), __jsx("div", {
+        className: "invalid-feedback",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
         },
         __self: this
       }, __jsx("i", {
-        className: "fa fa-search",
+        className: "fa fa-exclamation-circle",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 25
         },
         __self: this
-      })))))), __jsx("div", {
-        className: "card-body table-responsive p-0",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27
-        },
-        __self: this
-      }, __jsx("table", {
-        className: "table table-hover",
+      }), " Enter a last name"))), __jsx("div", {
+        className: "form-group",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 28
         },
         __self: this
-      }, __jsx("tbody", {
+      }, __jsx("label", {
+        htmlFor: "textArea1",
+        className: "col-sm-3 control-label",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 29
         },
         __self: this
-      }, __jsx("tr", {
+      }, "TextArea"), __jsx("div", {
+        className: "col-sm-12",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 30
         },
         __self: this
-      }, __jsx("th", {
+      }, __jsx("textarea", {
+        id: "textArea1",
+        className: "form-control",
+        rows: "3",
+        placeholder: "Enter ...",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 31
         },
         __self: this
-      }, "ID"), __jsx("th", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 32
-        },
-        __self: this
-      }, "User"), __jsx("th", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33
-        },
-        __self: this
-      }, "Date"), __jsx("th", {
+      }))), __jsx("div", {
+        className: "form-group",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 34
         },
         __self: this
-      }, "Status"), __jsx("th", {
+      }, __jsx("label", {
+        htmlFor: "select-1",
+        className: "col-sm-12 control-label",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 35
         },
         __self: this
-      }, "Reason"), __jsx("th", {
+      }, "Select"), __jsx("div", {
+        className: "col-sm-offset-2 col-sm-12",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 36
         },
         __self: this
-      }, "Progress")), __jsx("tr", {
+      }, __jsx("select", {
+        multiple: "",
+        id: "select-1",
+        className: "form-control",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, __jsx("option", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 38
         },
         __self: this
-      }, __jsx("td", {
+      }, "option 1"), __jsx("option", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 39
         },
         __self: this
-      }, "183"), __jsx("td", {
+      }, "option 2"), __jsx("option", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 40
         },
         __self: this
-      }, "John Doe"), __jsx("td", {
+      }, "option 3"), __jsx("option", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 41
         },
         __self: this
-      }, "11-7-2014"), __jsx("td", {
+      }, "option 4"), __jsx("option", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 42
         },
         __self: this
-      }, __jsx("span", {
-        className: "badge bg-success",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 42
-        },
-        __self: this
-      }, "Approved")), __jsx("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43
-        },
-        __self: this
-      }, "This user was approved by ", __jsx("b", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43
-        },
-        __self: this
-      }, "Anil")), __jsx("td", {
-        className: "align-middle",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 44
-        },
-        __self: this
-      }, __jsx("div", {
-        className: "progress progress-xs",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 45
-        },
-        __self: this
-      }, __jsx("div", {
-        className: "progress-bar bg-success",
-        style: {
-          width: '100%'
-        },
+      }, "option 5")))), __jsx("div", {
+        className: "form-group",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 46
         },
         __self: this
-      })))), __jsx("tr", {
+      }, __jsx("label", {
+        htmlFor: "check-1",
+        className: "col-sm-3 control-label",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }, "Checkbox"), __jsx("div", {
+        className: "col-sm-offset-2 col-sm-10",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }, __jsx("div", {
+        className: "form-check",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, __jsx("input", {
+        className: "form-check-input",
+        id: "check-1",
+        type: "checkbox",
+        value: "option1",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 50
         },
         __self: this
-      }, __jsx("td", {
+      }), __jsx("label", {
+        className: "form-check-label",
+        htmlFor: "check-1",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 51
         },
         __self: this
-      }, "175"), __jsx("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 52
-        },
-        __self: this
-      }, "Mike Doe"), __jsx("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 53
-        },
-        __self: this
-      }, "11-7-2014"), __jsx("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 54
-        },
-        __self: this
-      }, __jsx("span", {
-        className: "badge bg-danger",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 54
-        },
-        __self: this
-      }, "Denied")), __jsx("td", {
+      }, "Checkbox")))), __jsx("div", {
+        className: "form-group",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 55
         },
         __self: this
-      }, "This user was declined by ", __jsx("b", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55
-        },
-        __self: this
-      }, "Anil")), __jsx("td", {
-        className: "align-middle",
+      }, __jsx("label", {
+        htmlFor: "radio-1",
+        className: "col-sm-3 control-label",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 56
         },
         __self: this
-      }, __jsx("div", {
-        className: "progress progress-xs",
+      }, "Radio"), __jsx("div", {
+        className: "col-sm-offset-2 col-sm-10",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 57
         },
         __self: this
       }, __jsx("div", {
-        className: "progress-bar bg-danger",
-        style: {
-          width: '25%'
-        },
+        className: "form-check",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 58
         },
         __self: this
-      })))))))))));
+      }, __jsx("input", {
+        className: "form-check-input",
+        id: "radio-1",
+        type: "radio",
+        value: "option1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59
+        },
+        __self: this
+      }), __jsx("label", {
+        className: "form-check-label",
+        htmlFor: "radio-1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60
+        },
+        __self: this
+      }, "Radio")))), __jsx("div", {
+        className: "form-group",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64
+        },
+        __self: this
+      }, __jsx("label", {
+        htmlFor: "terms-1",
+        className: "col-sm-12 control-label",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 65
+        },
+        __self: this
+      }, "Terms and conditions"), __jsx("div", {
+        className: "col-sm-offset-2 col-sm-10",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
+        },
+        __self: this
+      }, __jsx("div", {
+        className: "form-check",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 67
+        },
+        __self: this
+      }, __jsx("input", {
+        className: "form-check-input is-invalid",
+        type: "checkbox",
+        value: "",
+        id: "invalidCheck3",
+        required: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68
+        },
+        __self: this
+      }), __jsx("label", {
+        className: "form-check-label",
+        htmlFor: "invalidCheck3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69
+        },
+        __self: this
+      }, "Agree to terms and conditions"), __jsx("div", {
+        className: "invalid-feedback",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 72
+        },
+        __self: this
+      }, "You must agree before submitting."))))), __jsx("div", {
+        className: "card-footer",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 79
+        },
+        __self: this
+      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        href: "/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 80
+        },
+        __self: this
+      }, __jsx("button", {
+        type: "submit",
+        className: "btn btn-info float-right",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 80
+        },
+        __self: this
+      }, "Save")))))));
     }
   }]);
 
-  return Users;
+  return AddUser;
 }(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
 
 
 
 /***/ }),
 
-/***/ 2:
-/*!******************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fusers&absolutePagePath=%2FUsers%2Fdavidzonana%2FDocuments%2Ftrybu%2Ftest%2Fpages%2Fusers.js ***!
-  \******************************************************************************************************************************************/
+/***/ 3:
+/*!************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fadd-user&absolutePagePath=%2FUsers%2Fdavidzonana%2FDocuments%2Ftrybu%2Ftest%2Fpages%2Fadd-user.js ***!
+  \************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fusers&absolutePagePath=%2FUsers%2Fdavidzonana%2FDocuments%2Ftrybu%2Ftest%2Fpages%2Fusers.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fusers&absolutePagePath=%2FUsers%2Fdavidzonana%2FDocuments%2Ftrybu%2Ftest%2Fpages%2Fusers.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fadd-user&absolutePagePath=%2FUsers%2Fdavidzonana%2FDocuments%2Ftrybu%2Ftest%2Fpages%2Fadd-user.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fadd-user&absolutePagePath=%2FUsers%2Fdavidzonana%2FDocuments%2Ftrybu%2Ftest%2Fpages%2Fadd-user.js!./");
 
 
 /***/ }),
@@ -9845,5 +9940,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=users.js.map
+},[[3,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=add-user.js.map
